@@ -1,9 +1,10 @@
 from manager import *
+from deck import *
 
 def main():
-    manager = Manager()
-    manager.addCard(1, "test")
-    print(manager.board[1])
+    deck = Deck()
+    for card in deck.deck:
+        print(card)
 
 if __name__ == "__main__":
     main()
