@@ -6,6 +6,6 @@ class Deck(object):
         self.board = [None]*52
         self.suits = "cdhs"
         self.ranks = "23456789JQKA"
-        self.deck = list(''.join(card) for card in itertools.product(self.ranks, self.suits))
+        self.contents = list(''.join(card) for card in itertools.product(self.ranks, self.suits))
     def shuffleDeck(self):
-        shuffle(self.deck)
+        shuffle(self.contents)
