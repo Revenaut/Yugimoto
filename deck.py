@@ -9,8 +9,8 @@ class Deck(object):
         self.contents = self.genContents()
     def genContents(self):
         contents = []
-        for x in range(12):
-            for i in range(3):
+        for x in range(13):
+            for i in range(4):
                 contents.append(x)
         return contents
     def shuffleDeck(self):
