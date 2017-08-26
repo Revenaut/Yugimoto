@@ -26,7 +26,7 @@ class Manager(object):
         return hand[randint(0, len(hand))]
 
     def goFish(self, player): # pop the next card off of the deck and add it to the fishing player's hand.
-        player.append(self.deck.contents.pop(0))
+        players[player].append(self.deck.contents.pop(0))
 
     def writeHands(self, file): # write the contents of the player's hand to a file
         file.write("playerA's hand is: " + ' '.join(str(e)
