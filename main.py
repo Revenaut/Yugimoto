@@ -3,8 +3,8 @@ from deck import *
 
 def main():
     deck = Deck()
-    for card in deck.deck:
-        print(card)
+    deck.shuffleDeck()
+    print(deck.deck)
 
 if __name__ == "__main__":
     main()

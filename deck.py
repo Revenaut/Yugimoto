@@ -1,5 +1,4 @@
-from card import *
-import random
+from random import shuffle
 import itertools
 
 class Deck(object):
@@ -7,7 +6,6 @@ class Deck(object):
         self.board = [None]*52
         self.suits = "cdhs"
         self.ranks = "23456789JQKA"
-        self.deck = self.generateDeck()
-    def generateDeck(self):
-        return tuple(''.join(card) for card in itertools.product(self.ranks, self.suits))
-
+        self.deck = list(''.join(card) for card in itertools.product(self.ranks, self.suits))
+    def shuffleDeck(self):
+        shuffle(self.deck)
