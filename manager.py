@@ -3,6 +3,8 @@ class Manager(object):
     def __init__(self):
         self.deck = Deck()
         self.deck.shuffleDeck()
+        print(len(self.deck.contents))
+
         self.playerA = self.genHand(),
         self.playerB = self.genHand()
     def genHand(self):
