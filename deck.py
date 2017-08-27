@@ -16,8 +16,8 @@ class Deck:
 
     # randomly arrange the order of the elements in the deck list.
     def shuffle(self):
-        Logger.log("The deck is shuffled.")
         shuffle(self.contents)
+        Logger.log("The deck is shuffled.")
 
     # removes and returns the top card of the deck
     def draw(self):
