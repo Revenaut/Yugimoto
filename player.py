@@ -9,5 +9,5 @@ class Player:
 
     def hit(self, deck):
         card = deck.draw()
-        Logger.log(self.name + "hits, drawing " + card.fullName + ".")
         self.hand.add(card)
+        Logger.log(self.name + "hits, drawing " + card.fullName + ".")
