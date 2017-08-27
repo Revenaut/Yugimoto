@@ -24,5 +24,5 @@ class Deck:
         return self.contents.pop()
 
     # adds a card to the top of the deck
-    def add(self, card):
-        self.contents.append(card)
+    def addCards(self, cards):
+        self.contents += cards
