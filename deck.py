@@ -1,4 +1,5 @@
 from random import shuffle
+from card import *
 
 
 class Deck:
@@ -7,9 +8,9 @@ class Deck:
 
     def genContents(self):  # generate a list of [0..13] 4 times.
         contents = []
-        for x in range(13):
-            for i in range(4):
-                contents.append(x)
+        for rank in RANKS:
+            for suit in SUITS:
+                contents.append(Card(rank, suit))
         return contents
 
     # randomly arrange the order of the elements in the deck list.
