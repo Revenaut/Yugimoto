@@ -1,0 +1,4 @@
+The deck is shuffled.
+Jack is dealt a Seven of Clubs and a Four of Hearts.
+Ben is dealt a Seven of Diamonds and a Nine of Clubs.
+The Dealer is dealt a Jack of Clubs and a King of Hearts.
