@@ -11,3 +11,8 @@ class Player:
         card = deck.draw()
         self.hand.add(card)
         Logger.log(self.name + "hits, drawing " + card.fullName + ".")
+
+    # returns all the cards in hand to the deck
+    def returnHand(self, deck):
+        deck.contents += self.hand.contents # adds all the cards to the deck
+        self.hand.contents = [] # removes all cards from the hand
