@@ -16,3 +16,7 @@ class Deck:
     # randomly arrange the order of the elements in the deck list.
     def shuffle(self):
         shuffle(self.contents)
+
+    # removes and returns the top card of the deck
+    def draw(self):
+        return self.contents.pop()
