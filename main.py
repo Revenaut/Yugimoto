@@ -5,7 +5,7 @@ from random import randint
 
 
 def main():
-    Logger.setFile('log.txts')
+    Logger.setFile('log.txt')
 
 if __name__ == "__main__":
     main()
