@@ -1,10 +1,6 @@
 from enum import Enum
-
-class Rank(Enum):
-    TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE = range(13)
-
-class Suit(Enum):
-    CLUBS, DIAMONDS, HEARTS, SPADES = range(4)
+Rank = Enum('Rank', 'TWO THREE FOUR FIVE SIX SEVEN EIGHT NINE TEN JACK QUEEN KING ACE')
+Suit = Enum('Suit', 'CLUBS DIAMONDS HEARTS SPADES')
 
 class Card:
     def __init__(self, rank, suit):
