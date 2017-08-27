@@ -23,6 +23,6 @@ class Deck:
     def draw(self):
         return self.contents.pop()
 
-    # adds a card to the top of the deck
+    # adds cards to the top of the deck
     def addCards(self, cards):
         self.contents += cards
