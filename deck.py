@@ -1,7 +1,7 @@
 from random import shuffle
 
 
-class Deck(object):
+class Deck:
     def __init__(self):
         self.contents = self.genContents()
 

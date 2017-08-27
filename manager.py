@@ -2,7 +2,7 @@ from deck import *
 from random import getrandbits
 
 
-class Manager(object):
+class Manager:
     def __init__(self):
         self.file = open('test.txt', 'w')  # open our output file
         self.deck = Deck()  # initialize the deck
