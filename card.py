@@ -27,5 +27,9 @@ class Card:
         self.suit = suit
 
     @property
-    def name(self):
+    def value(self):
+        return RANKS[self.rank]
+
+    @property
+    def show(self):
         return self.rank + " of " + self.suit
