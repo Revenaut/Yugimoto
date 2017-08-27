@@ -20,4 +20,3 @@ class Hand:
     @property
     def show(self):
         return ", ".join([card.show for card in self.contents])
-
