@@ -4,14 +4,14 @@ from card import *
 
 class Deck:
     def __init__(self):
-        self.contents = self.genContents()
+        self.genContents()
 
-    def genContents(self):  # generate a list of [0..13] 4 times.
-        contents = []
+    # reset the deck to the original 52 cards
+    def genContents(self):
+        self.contents = []
         for rank in RANKS:
             for suit in SUITS:
-                contents.append(Card(rank, suit))
-        return contents
+                self.contents.append(Card(rank, suit))
 
     # randomly arrange the order of the elements in the deck list.
     def shuffle(self):
