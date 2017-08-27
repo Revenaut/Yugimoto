@@ -1,5 +1,6 @@
 from random import shuffle
 from card import *
+from logger import *
 
 
 class Deck:
