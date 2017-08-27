@@ -4,7 +4,8 @@ from random import randint
 
 
 def main():
-    manager = Manager()
+    deck = Deck()
+    print(deck.contents[0].name)
 
 if __name__ == "__main__":
     main()
