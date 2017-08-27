@@ -15,7 +15,7 @@ class Player:
     def deal(self, cards):
         for card in cards:
             self.hand.add(card)
-        Logger.log(self.name + " is dealt " + cards[0].fullName + " and " + cards[1].fullName)
+        Logger.log(self.name + " is dealt " + cards[0].fullName + " and " + cards[1].fullName + ".")
 
     # returns all the cards in hand to the deck
     def returnHand(self, deck):
