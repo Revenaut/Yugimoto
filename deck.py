@@ -13,5 +13,5 @@ class Deck:
         return contents
 
     # randomly arrange the order of the elements in the deck list.
-    def shuffleDeck(self):
+    def shuffle(self):
         shuffle(self.contents)
