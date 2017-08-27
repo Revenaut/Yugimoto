@@ -4,10 +4,10 @@ from card import *
 
 class Deck:
     def __init__(self):
-        self.genContents()
+        self.reset()
 
     # reset the deck to the original 52 cards
-    def genContents(self):
+    def reset(self):
         self.contents = []
         for rank in RANKS:
             for suit in SUITS:
