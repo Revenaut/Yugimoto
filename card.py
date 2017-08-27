@@ -29,3 +29,7 @@ class Card:
     @property
     def show(self):
         return self.rank + " of " + self.suit
+
+    @property
+    def fullName(self):
+        return ('an' if self.rank in ["Eight", "Ace"] else 'a') + self.show
