@@ -12,9 +12,11 @@ class Deck:
         for rank in RANKS:
             for suit in SUITS:
                 self.contents.append(Card(rank, suit))
+        self.shuffle()
 
     # randomly arrange the order of the elements in the deck list.
     def shuffle(self):
+        Logger.log("The deck is shuffled.")
         shuffle(self.contents)
 
     # removes and returns the top card of the deck
