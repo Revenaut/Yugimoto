@@ -32,4 +32,4 @@ class Card:
 
     @property
     def fullName(self):
-        return ('an' if self.rank in ["Eight", "Ace"] else 'a') + self.show
+        return ('an ' if self.rank in ["Eight", "Ace"] else 'a ') + self.show
