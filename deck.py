@@ -22,3 +22,7 @@ class Deck:
     # removes and returns the top card of the deck
     def draw(self):
         return self.contents.pop()
+
+    # adds a card to the top of the deck
+    def add(self, card):
+        self.contents.append(card)
