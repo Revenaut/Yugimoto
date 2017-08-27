@@ -6,7 +6,7 @@ class Game:
     def __init__(self):
         self.players = []
         self.dealer = Player("The Dealer")
-        deck = Deck()
+        self.deck = Deck()
 
     def addPlayer(self, name):
         self.players.append(Player(name))
